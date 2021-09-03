@@ -1,0 +1,26 @@
+
+@import './_global.scss';
+
+.app{
+
+    height: 100vh;
+
+    .sections{
+        width: 100%;
+        height: calc(100vh - 40px);
+        background-color: $my-color-secondary;
+        position: relative;
+        top: 40px;
+        scroll-snap-type: y mandatory;
+        scrollbar-width: none;   // Firefox
+        ::-webkit-scrollbar{
+            display: none;
+        }
+        
+        > *{
+            scroll-snap-align: center;
+        }
+    }
+
+}
+
