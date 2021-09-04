@@ -1,6 +1,155 @@
+@import '../../global';
+
 .contact{
     width: 100%;
-    height: calc(100vh - 90px);
-    background-color: lightgray;
+    height: calc(100vh - 40px);
+    background-color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
+    .title{
+        position: absolute;
+        top: 60px;
+        text-shadow: 2px 2px crimson;
+        color: $my-color-primary;
+        font-family: $ritika-font;
+    }
+    
+    .wrapper{
+        position: absolute;
+        top: 150px;
+        width: 90vw;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .container{
+            width: 1000px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            .left{
+                margin-right: 30px;
+                flex: 1;
+                height: 100%;
+                background-color:white;
+                border-radius: 30px;
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                justify-content: space-around;
+                box-shadow: 4px 7px 20px #d6d3d3;
+                transition: all 0.3s ease;
+                
+                &:hover{
+                    box-shadow: 4px 7px 35px #d6d3d3;
+                    cursor: pointer;
+                    transform: scale(1.02);
+                }
+
+                form{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    height: 90%;
+
+                    input{
+                        width: 90%;
+                        height: 30px;
+                        font-size: 20px;
+                        text-align: center;
+                        font-family: $brand-font;
+                        margin-bottom: 10px;
+                    }
+
+                    textarea{
+                        width: 90%;
+                        height: 250px;
+                        font-size: 20px;
+                        text-align: start;
+                        font-family: $brand-font;
+                    }
+
+                    button{
+                        width: 90%;
+                        height: 30px;
+                        font-size: 20px;
+                        text-align: center;
+                        font-family: $brand-font;
+                        margin-top: 10px;
+                        border: 1px solid $my-color-primary;
+                        border-radius: 20px;
+                        background-color: rgb(174, 211, 247);
+                        color: rgb(81, 134, 250);
+
+                        &:hover{
+                            color: white;
+                            background-color:$my-color-primary;
+                            cursor: pointer;
+                        }
+                    }
+
+                }
+                
+            }
+        
+            .right{
+                flex: 2;
+                height: 100%;
+                background-color: $my-color-primary;
+                border-radius: 30px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                box-shadow: 4px 7px 20px #87cef7;
+                transition: all 0.3s ease;
+
+                &:hover{
+                    box-shadow: 4px 7px 35px #4db3f7;
+                    cursor: pointer;
+                    transform: scale(1.02);
+                }
+
+                h2{
+                    margin-top: 10px;
+                    font-size: 40px;
+                    text-shadow: 2px 2px rgb(245, 245, 193);
+                }
+
+                .box{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+
+                    .item{
+                        margin: 25px;
+                        text-align: center;
+
+                        a{
+                            img{
+                                transition: all 0.2s ease;
+
+                                &:hover{
+                                    transform: scale(1.1);
+                                }
+                            }
+                        }
+
+                        h3{
+                            font-size: 25px;
+                        }
+                    }
+
+                }
+            }
+        }
+
+    }
 }
