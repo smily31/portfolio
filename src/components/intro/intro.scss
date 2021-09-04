@@ -2,7 +2,9 @@
 
 .intro{
     width: 100%;
-    height: calc(100vh - 40px);
+    // height: calc(100vh - 40px);
+    height: 100vh;
+    background-color: $my-color-secondary;
     // background-color: $my-color-primary;
     display: flex;
 
@@ -27,7 +29,6 @@
 
     .introText{
         flex: 0.6;
-        background-color: $my-color-secondary;
 
         .wrapper{
             width: 70%;
@@ -35,11 +36,13 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            // text-align: center;
+            text-align: center;
             padding-left: 12%;
 
             h4{
-                font-style: 30px;
+                margin-bottom: 30px;
+                font-weight: 500;
+                font-size: 30px;
             }
             
             h1{
@@ -53,15 +56,15 @@
             h2{
                 margin-bottom: 30px;
                 font-weight: 500;
-                font-size: 50px;
+                font-size: 40px;
             }
 
             h3{
-                margin-bottom: 20px;
-                font-style: 40px;
-                // padding: 10px 45px;
-                text-align: left;
+                margin-bottom: 30px;
+                font-weight: 500;
+                font-size: 30px;
             }
+           
         }
     }
 }
