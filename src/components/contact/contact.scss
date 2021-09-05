@@ -15,6 +15,10 @@
         text-shadow: 2px 2px crimson;
         color: $my-color-primary;
         font-family: $ritika-font;
+
+        @include mobile{
+            top: 30px;
+        }
     }
     
     .wrapper{
@@ -32,6 +36,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+            @include mobile{
+                flex-direction: column;
+                align-items: center;
+            }
             
             .left{
                 margin-right: 30px;
@@ -46,6 +55,13 @@
                 box-shadow: 4px 7px 20px #d6d3d3;
                 transition: all 0.3s ease;
                 
+                @include mobile{
+                    width: 95%;
+                    height: 200px;
+                    margin-right: 0;
+                    margin-bottom: 30px;
+                }
+
                 &:hover{
                     box-shadow: 4px 7px 35px #d6d3d3;
                     cursor: pointer;
@@ -64,6 +80,7 @@
                         height: 30px;
                         font-size: 20px;
                         text-align: center;
+                        border-radius: 20px;
                         font-family: $brand-font;
                         margin-bottom: 10px;
                     }
@@ -72,6 +89,7 @@
                         width: 90%;
                         height: 250px;
                         font-size: 20px;
+                        border-radius: 15px;
                         text-align: start;
                         font-family: $brand-font;
                     }
@@ -110,6 +128,10 @@
                 box-shadow: 4px 7px 20px #87cef7;
                 transition: all 0.3s ease;
 
+                @include mobile{
+                    height: 80%;
+                }
+
                 &:hover{
                     box-shadow: 4px 7px 35px #4db3f7;
                     cursor: pointer;
@@ -120,6 +142,11 @@
                     margin-top: 10px;
                     font-size: 40px;
                     text-shadow: 2px 2px rgb(245, 245, 193);
+
+                    @include mobile{
+                        margin-top: 5px;
+                        font-size: 30px;
+                    }
                 }
 
                 .box{
@@ -131,6 +158,10 @@
                     .item{
                         margin: 25px;
                         text-align: center;
+
+                        @include mobile{
+                            margin: 5px;
+                        }
 
                         a{
                             img{
@@ -144,6 +175,10 @@
 
                         h3{
                             font-size: 25px;
+
+                            @include mobile{
+                                display: none;
+                            }
                         }
                     }
 

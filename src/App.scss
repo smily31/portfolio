@@ -4,11 +4,12 @@
 .app{
 
     height: 100vh;
-
+    background-color: $my-color-secondary;
+    font-family: $brand-font;
+    
     .sections{
         width: 100%;
         height: calc(100vh - 40px);
-        background-color: $my-color-secondary;
         position: relative;
         top: 40px;
         scroll-snap-type: y mandatory;

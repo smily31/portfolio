@@ -1,6 +1,67 @@
+@import '../../global';
+
 .skill{
     width: 100%;
-    height: calc(100vh - 40px);
+    height: 100vh;
     background-color: lightcyan;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    @include mobile{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .title{
+        position: absolute;
+        top: 80px;
+        text-shadow: 2px 2px crimson;
+        color: $my-color-primary;
+        font-family: $ritika-font;
+
+        @include mobile{
+            top: 40px;
+        }
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @include mobile{
+            position: absolute;
+            top:80px;
+            padding: 15px;
+        }
+
+        .box{
+            margin: 25px;
+            border-radius: 50%;
+            box-shadow: 4px 7px 20px #80d7fa;
+            transition: all 0.3s ease;
+
+            @include mobile{
+                margin-right: 5px;
+                width: 80px;
+                height: 80px;
+            }
+
+            &:hover{
+                box-shadow: 4px 7px 35px #4ba9f7;
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+
+            img{
+                @include mobile{
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+        }
+    }
 }

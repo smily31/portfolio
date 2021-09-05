@@ -1,7 +1,7 @@
 export const data = [
     {
         id : "1",
-        image : "assest/calculator.jpg",
+        image : "assest/projectView/calculator.jpg",
         title : "Calculator",
         desc: "This is a simple web based attractive calculator",
         stack: ["HTML" , "CSS" , "JAVASCIPT"],
@@ -10,7 +10,7 @@ export const data = [
     },
     {
         id : "2",
-        image : "assest/beatBox.png",
+        image : "assest/projectView/beatBox.png",
         title : "Beat Box",
         desc: "It plays sound when any above shown key is pressed",
         stack: ["HTML" , "CSS" , "JAVASCIPT"],
@@ -19,7 +19,7 @@ export const data = [
     },
     {
         id : "3",
-        image : "assest/guessTheNo.png",
+        image : "assest/projectView/guessTheNo.png",
         title : "Guess The Number",
         desc: "It is a game which guesses your imagined number",
         stack: ["HTML" , "CSS" , "JAVASCIPT"],
@@ -28,7 +28,7 @@ export const data = [
     },
     {
         id : "4",
-        image : "assest/responsiveCard.png",
+        image : "assest/projectView/responsiveCard.png",
         title : "Birthday Invitation Card",
         desc: "It is a attractive responsive birthday card",
         stack: ["HTML" , "CSS" , "JAVASCIPT"],
@@ -37,7 +37,7 @@ export const data = [
     },
     {
         id : "5",
-        image : "assest/searchGif.png",
+        image : "assest/projectView/searchGif.png",
         title : "GIF Search Engine",
         desc: "This shows GIFs on your search",
         stack: ["HTML" , "CSS" , "JAVASCIPT"],
@@ -46,7 +46,7 @@ export const data = [
     },
     {
         id : "6",
-        image : "assest/soundCloud.png",
+        image : "assest/projectView/soundCloud.png",
         title : "Sound Cloud Player",
         desc: "Its a mini music player and it also shows your favorite show in side playlist",
         stack: ["HTML" , "CSS" , "JAVASCIPT"],
@@ -55,7 +55,7 @@ export const data = [
     },
     {
         id : "7",
-        image : "assest/snakeGame.png",
+        image : "assest/projectView/snakeGame.png",
         title : "Snake-The Eater",
         desc: "Its your forever snake game",
         stack: ["HTML" , "CSS" , "JAVASCIPT"],

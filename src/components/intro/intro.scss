@@ -2,25 +2,43 @@
 
 .intro{
     width: 100%;
-    // height: calc(100vh - 40px);
     height: 100vh;
     background-color: $my-color-secondary;
-    // background-color: $my-color-primary;
     display: flex;
+
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
 
     .profileImage
     {
         flex: 0.4;
         background-color: $my-color-primary;
         border-radius: 0 50% 0 50%;
+
+        @include mobile{
+            height: 60%;
+            width: 80%;
+        }
+
         .imageContainer{
             margin-top : 45px;
             width: 500px;
             height: 500px;
-            
+
+            @include mobile{
+                width: 100%;
+            }
+
             img{
                 margin-left: 30px;
                 width: 100%;
+
+                @include mobile{
+                    height: 60%;
+                    width: 90%;
+                }
             }   
         }
 
@@ -39,10 +57,21 @@
             text-align: center;
             padding-left: 12%;
 
+            @include mobile{
+                line-height: 1;
+                padding-left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
             h4{
                 margin-bottom: 30px;
                 font-weight: 500;
                 font-size: 30px;
+
+                @include mobile{
+                    margin-bottom: 10px;
+                }
             }
             
             h1{
@@ -51,18 +80,32 @@
                 color: $my-color-great;
                 font-family: $ritika-font;
                 margin-bottom: 20px;
+
+                @include mobile{
+                    margin-bottom: 15px;
+                    font-size: 30px;
+                }
             }
             
             h2{
                 margin-bottom: 30px;
                 font-weight: 500;
                 font-size: 40px;
+
+                @include mobile{
+                    margin-bottom: 5px;
+                    font-size: 30px;
+                }
             }
 
             h3{
                 margin-bottom: 30px;
                 font-weight: 500;
                 font-size: 30px;
+
+                @include mobile{
+                    margin-bottom: 15px;
+                }
             }
            
         }

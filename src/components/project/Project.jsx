@@ -24,8 +24,8 @@ export default function Project() {
                                 <div className="info">
                                 <h1>{d.title}</h1>
                                 <h2>Description : </h2><p>{d.desc}</p>
-                                <h2>Web Stack : </h2>
-                                <ul>
+                                <h2 className="notDisplay">Web Stack : </h2>
+                                <ul className="notDisplay">
                                     {d.stack.map(i => <li>{i}</li>)}
                                 </ul>
                                 <h2>Github Repo : </h2><span><a href={d.github}>click me</a></span>
