@@ -11,9 +11,9 @@ export default function Contact() {
             <div className="wrapper">
               <div className="container">
                 <div className="left">
-                  <form> 
-                    <input type="text" placeholder="Your Email"/>
-                    <textarea placeholder="Write message for me...."></textarea>
+                  <form method= "POST"> 
+                    <input type="email" name="email" placeholder="Your Email"/>
+                    <input type="text" className="textarea" name="message" placeholder="Write message for me...."></input>
                     <button type="submit">Send Message</button>
                   </form>
                 </div>

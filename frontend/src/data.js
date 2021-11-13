@@ -1,6 +1,24 @@
 export const data = [
     {
         id : "1",
+        image : "assest/projectView/website.png",
+        title : "Your Bazaar",
+        desc: "An E-Commerce website with signup/login and Add to cart functionality",
+        stack: ["HTML" , "REACTJS" , "REACT-BOOTSTRAP" , "NODEJS" , "EXPRESSJS" , "MONGODB-ATLAS"],
+        github : "https://github.com/smily31/your-bazaar",
+        project : "https://your-bazaar.herokuapp.com/"
+    },
+    {
+        id : "2",
+        image : "assest/projectView/todoSample.png",
+        title : "To-Do App",
+        desc: "Website to note down your daily task",
+        stack: ["HTML" , "SASS" , "NODEJS" , "EXPRESSJS" , "MONGODB"],
+        github : "https://github.com/smily31/note-taking-app",
+        project : "https://github.com/smily31/note-taking-app"
+    },
+    {
+        id : "3",
         image : "assest/projectView/calculator.jpg",
         title : "Calculator",
         desc: "This is a simple web based attractive calculator",
@@ -9,7 +27,7 @@ export const data = [
         project : "https://smily31.github.io/Calculator/"
     },
     {
-        id : "2",
+        id : "4",
         image : "assest/projectView/beatBox.png",
         title : "Beat Box",
         desc: "It plays sound when any above shown key is pressed",
@@ -18,7 +36,7 @@ export const data = [
         project : "https://smily31.github.io/BeatBoxJS/"
     },
     {
-        id : "3",
+        id : "5",
         image : "assest/projectView/guessTheNo.png",
         title : "Guess The Number",
         desc: "It is a game which guesses your imagined number",
@@ -27,7 +45,7 @@ export const data = [
         project : "https://smily31.github.io/guess-the-number/"
     },
     {
-        id : "4",
+        id : "6",
         image : "assest/projectView/responsiveCard.png",
         title : "Birthday Invitation Card",
         desc: "It is a attractive responsive birthday card",
@@ -36,7 +54,7 @@ export const data = [
         project : "https://smily31.github.io/responsive-1/"
     },
     {
-        id : "5",
+        id : "7",
         image : "assest/projectView/searchGif.png",
         title : "GIF Search Engine",
         desc: "This shows GIFs on your search",
@@ -45,7 +63,7 @@ export const data = [
         project : "https://smily31.github.io/Gif-Search-Engine/"
     },
     {
-        id : "6",
+        id : "8",
         image : "assest/projectView/soundCloud.png",
         title : "Sound Cloud Player",
         desc: "Its a mini music player and it also shows your favorite show in side playlist",
@@ -54,7 +72,7 @@ export const data = [
         project : "https://smily31.github.io/SoundCloud-Player/"
     },
     {
-        id : "7",
+        id : "9",
         image : "assest/projectView/snakeGame.png",
         title : "Snake-The Eater",
         desc: "Its your forever snake game",
